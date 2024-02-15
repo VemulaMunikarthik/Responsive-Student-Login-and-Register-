@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup?</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Karthik Solutions</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <!-- <a href="#">Services</a> -->
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <div class="Form-box">
+        <form class="Login-form">
+            <!-- Login Form Content -->
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Email</label>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox">
+                <span>
+                    <input type="checkbox" id="login-checkbox">
+                    <label for="login-checkbox">Remember Me</label>
+                </span>
+                <h5>Forget password ?</h5>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <h5 class="Register-btn">Dont have an account ? Register</h5>
+        </form>
+        <form class="Register-form">
+            <!-- Register Form Content -->
+            <div class="register-slide">
+                
+                <h1>Register-1/5</h1>
+              
+                <!-- Inside Register Form Content -->
+            <div class="input-box">
+                <input type="text" id="register-email" required>
+                <label>Email</label>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <!-- Inside Register Form Content -->
+
+
+            <!-- Inside Register Form Content -->
+            <div class="input-box">
+                <input type="password" id="register-password" required>
+                <label>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+
+            <!-- Inside Register Form Content -->
+            <div class="input-box">
+                <input type="password" id="reenter-password" required>
+                <label>Re-enter Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            
+            </div>
+            
+            <div class="register-slide">
+                <h1>Register-2/5</h1>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+            <div class="input-box">
+                    <input type="tel" required>
+                    <label>Mobile Number</label>
+                    <ion-icon name="call-outline"></ion-icon>
+                </div> 
+              
+            </div>
+            <div class="register-slide">
+                <h1>Register - 3/5</h1>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>college name</label>
+                    <ion-icon name="school-outline"></ion-icon>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="year" name="year" min="1900" max="2100"  required>
+                    <label>Graduation year</label>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" required>
+                    <label>CGPA</label>
+                    <ion-icon name="book"></ion-icon>
+                </div>
+            </div>
+            <div class="register-slide">
+                <h1>Register - 4/5</h1>
+                <div class="input-box">
+                    <label>Domain Preference 1</label>
+                    <select name="domain1" required>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="iot">IoT</option>
+                        <option value="ai_ml">AI/ML</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    
+                    <input type="number" name="salary" required>
+                    <label>Expected Salary</label>
+                    <ion-icon name="cash-outline"></ion-icon>
+                </div>
+                <!-- <div class="input-box">
+                    <label>Domain Preference 2</label>
+                    <select name="domain2" required>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="iot">IoT</option>
+                        <option value="ai_ml">AI/ML</option>
+                    </select>
+                </div>
+                
+                <div class="input-box">
+                    <label>Domain Preference 3</label>
+                    <select name="domain3" required>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="iot">IoT</option>
+                        <optwion value="ai_ml">AI/ML</option>
+                    </select>
+                </div> -->
+                
+            </div>
+            <div class="register-slide">
+                <h1>Register - 5/5</h1>
+                
+                
+                
+               
+                <div class="input-box">
+                    <label>Resume</label>
+                    <input type="file" name="resume" id="resume" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="register-checkbox">
+                    <label for="register-checkbox">I agree to the terms & conditions</label>
+                </div>
+              </div>  
+              <div class="register-navigation">
+                <ion-icon class="prev-slide" name="chevron-back-outline"></ion-icon>
+                <ion-icon class="next-slide" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <h5 class="Login-btn">Register before ? Login</h5>
+        </form>
+    </div>
+    <!-- <div class="password-rules" id="password-rules">
+        Password must contain one uppercase letter, one lowercase letter, one special character, and be at least 8 characters long.
+    </div> -->
+
+    
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
